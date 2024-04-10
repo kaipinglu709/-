@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html" class="active">GPA Calculator</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+        <h1>GPA Calculator Project</h1>
+    </header>
+    <main>
+        <section>
+            <div class="calculator-heading"> 
+                <h2>GPA Calculator</h2>
+                <img src="images/umich.png" alt="University of Michigan Logo" class="umich-logo">
+            </div>
+            <form id="gpaForm">
+                <label for="currentGPA">Current GPA:</label>
+                <input type="number" id="currentGPA" name="currentGPA" step="0.01" min="0" max="4" required><br><br>
+                <label for="totalCredits">Total Credits Before This Semester:</label>
+                <input type="number" id="totalCredits" name="totalCredits" min="0" required><br><br>
+                
+
+                <fieldset>
+                    <legend>Courses This Semester</legend>
+                    <!-- Course 1 -->
+                    <label for="grade1">Course 1 Grade (e.g., A-, B+):</label>
+                    <input type="text" id="grade1" name="grade1" pattern="[A-Fa-f+-]{1,2}">
+                    <label for="credits1">Credits:</label>
+                    <input type="number" id="credits1" name="credits1" min="1" step="1"><br><br>
+                    <!-- Course 2 -->
+                    <label for="grade2">Course 2 Grade (e.g., A-, B+):</label>
+                    <input type="text" id="grade2" name="grade2" pattern="[A-Fa-f+-]{1,2}">
+                    <label for="credits2">Credits:</label>
+                    <input type="number" id="credits2" name="credits2" min="1" step="1"><br><br>
+                    <!-- Course 3 -->
+                    <label for="grade3">Course 3 Grade (e.g., A-, B+):</label>
+                    <input type="text" id="grade3" name="grade3" pattern="[A-Fa-f+-]{1,2}">
+                    <label for="credits3">Credits:</label>
+                    <input type="number" id="credits3" name="credits3" min="1" step="1"><br><br>
+                    <!-- Course 4 -->
+                    <label for="grade4">Course 4 Grade (e.g., A-, B+):</label>
+                    <input type="text" id="grade4" name="grade4" pattern="[A-Fa-f+-]{1,2}">
+                    <label for="credits4">Credits:</label>
+                    <input type="number" id="credits4" name="credits4" min="1" step="1"><br><br>
+                    <!-- Course 5 -->
+                    <label for="grade5">Course 5 Grade (e.g., A-, B+):</label>
+                    <input type="text" id="grade5" name="grade5" pattern="[A-Fa-f+-]{1,2}">
+                    <label for="credits5">Credits:</label>
+                    <input type="number" id="credits5" name="credits5" min="1" step="1"><br><br>
+                    <!-- Course 6 -->
+                    <label for="grade6">Course 6 Grade (e.g., A-, B+):</label>
+                    <input type="text" id="grade6" name="grade6" pattern="[A-Fa-f+-]{1,2}">
+                    <label for="credits6">Credits:</label>
+                    <input type="number" id="credits6" name="credits6" min="1" step="1"><br><br>
+                </fieldset>
+                
+                
+                <input type="submit" value="Calculate GPA">
+            </form>
+            <div id="gpaResult"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
