@@ -308,6 +308,13 @@ h1 {
     height: 30px; 
 }
 
+#gpaResult {
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 18px; 
+    color: #00274C; 
+    margin-top: 20px; 
+}
 
 
 
