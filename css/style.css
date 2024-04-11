@@ -1,5 +1,4 @@
 /*color trials f5f5f5 light cream*/
-
 h1, h2 {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -89,8 +88,6 @@ main {
 
 
 
-
-
 /* Base styles for typography and layout */
 body, p {
     font-family: 'Roboto', sans-serif;
@@ -121,6 +118,8 @@ h2 {
 
 p {
     font-size: 18px; 
+    text-align: center;
+
     color: #00274C;
 }
 
@@ -177,8 +176,8 @@ p {
 }
 
 .image-container {
-    display: flex; /* Enables Flexbox */
-    flex-direction: center; /* Stacks children vertically */
+    display: flex; 
+    flex-direction: center; 
 }
 
 
@@ -186,7 +185,6 @@ p {
 .gpa-finding-instructions p,
 .gpa-scale-section p {
     background-color: #ffffff; 
-    text-align: center;
 }
 
 
@@ -218,25 +216,21 @@ p {
 fieldset {
     max-width: 600px; /* Adjust as needed to suit your design */
     margin: 0 auto; /* Centers the fieldset within its parent */
-    padding: 20px; /* Optional: Adds some internal spacing */
-    border: 1px solid #ccc; /* Optional: Adds a border for visual structure */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 
 }
 
 
 /* Targeting the fieldset within the form specifically */
 #gpaForm fieldset {
-    /* center the fieldset*/
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #ffffff;
-    /* Adjust the width as needed : make wider*/
-
 
 }
 
@@ -247,7 +241,6 @@ fieldset {
     display: block; /* Ensures the label is on a new line */
     color: #333;
     font-size: 14px;
-    /*center the label*/
     text-align: center;
 
 }
@@ -256,18 +249,16 @@ fieldset {
 #gpaForm input[type='number'],
 #gpaForm input[type='text'] {
     width: 50%; /* Adjusting width to include padding */
-    padding: 10px 12px; /* Adding some padding */
-    margin-top: 5px; /* A little space above the input */
+    padding: 10px 12px; 
+    margin-top: 5px; 
     border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* A subtle border */
+    border: 1px solid #ccc;
     font-size: 16px; /* Making the text a bit larger */
-    box-sizing: border-box; /* Ensures padding does not affect width */
-    /*make same width and centered as my fieldset*/
-    /*center the input*/
+    box-sizing: border-box; 
+
     display: block;
     margin: 0 auto;
     
-
 
 }
 
@@ -282,11 +273,8 @@ fieldset {
     cursor: pointer;
     font-size: 18px; /* Larger text for the button */
     transition: background-color 0.3s; /* Smooth transition for hover */
-    /*center the button*/
     display: block;
     margin: 0 auto;
-    /* Adjust the width as needed */
-    /*move down more*/  
     margin-top: 20px;
 }
 
@@ -299,7 +287,6 @@ fieldset {
 
 h1 {
     font-family: 'Georgia', serif; /* Changes font of h1 */
-    /* Additional styling */
     color: #00274C; 
     font-size: 2em; /* Adjust based on your design preference */
 }
@@ -310,15 +297,15 @@ h1 {
     justify-content: center; /* Center the container's contents */
     text-align: center;
     width: 100%; /* Ensure the container takes full width of its parent */
-    margin-bottom: 20px; /* Optional: Adds some space below the heading */
+    margin-bottom: 20px; 
 }
 
 .calculator-heading h2 {
-    margin-right: 20px; /* Adds space between the text and the logo */
+    margin-right: 20px; 
 }
 
 .umich-logo {
-    height: 30px; /* Adjust the logo size as necessary */
+    height: 30px; 
 }
 
 
